@@ -1,0 +1,87 @@
+.chatPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatContainer {
+  background-color: white;
+  border-radius: 20px;
+  height: 70%;
+  width: 60%;
+  border: 0.1mm solid rgb(185, 185, 185);
+}
+.header {
+  background-color: #11d7a3;
+  height: 15%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
+  border: none;
+  justify-content: center;
+}
+.header > h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3vmax;
+}
+.chatbox {
+  height: 70%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.inputbox {
+  height: 15%;
+  box-sizing: border-box;
+  display: flex;
+}
+#chatinput {
+  width: 80%;
+  outline: none;
+  font-size: 1.1vmax;
+  background-color: #fff;
+  border: none;
+  padding: 1.2vmax;
+  box-sizing: border-box;
+  border-bottom-left-radius: 20px;
+  background-color: #11d7a3;
+}
+.sendbtn {
+  background-color: #51e0ba;
+  border-bottom-right-radius: 20px;
+  color: black;
+  font-size: 1.3vmax;
+  font-weight: bolder;
+  border: none;
+  width: 21%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .chatContainer {
+    height: 100%;
+    width: 100%;
+  }
+  .header > h2 {
+    font-size: 8vw;
+  }
+  .inputbox {
+    height: 14.5%;
+  }
+  #chatinput {
+    width: 80%;
+    font-size: 7vw;
+    padding: 3vw;
+  }
+  .sendbtn {
+    width: 21%;
+    font-size: 6vw;
+  }
+  .chatbox {
+    height: 70%;
+    border-bottom: none;
+  }
+}
